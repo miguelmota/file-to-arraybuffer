@@ -11,7 +11,7 @@ npm install @npmlib/file-to-arraybuffer
 ## Getting started
 
 ```javascript
-var fileToArrayBuffer = require('file-to-arraybuffer')
+const fileToArrayBuffer = require('file-to-arraybuffer')
 
 const input = document.querySelector('#file')
 input.addEventListener('change', function(event) {
@@ -21,7 +21,7 @@ input.addEventListener('change', function(event) {
 })
 ```
 
-Check out the [`example/`](example/) folder for a full example.
+Check out the [`example/`](example/) folder for the full example.
 
 ## License
 
