@@ -5,7 +5,7 @@
 ## Install
 
 ```bash
-npm install file-to-arraybuffer
+npm install @npmlib/file-to-arraybuffer
 ```
 
 ## Getting started
