@@ -1,6 +1,6 @@
 # file-to-arraybuffer
 
-Convert File to ArrayBuffer
+> Convert [File](https://developer.mozilla.org/en-US/docs/Web/API/File) to [ArrayBuffer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer)
 
 ## Install
 
@@ -21,7 +21,7 @@ input.addEventListener('change', function(event) {
 })
 ```
 
-Check out the [example/](example/) folder for a full example.
+Check out the [`example/`](example/) folder for a full example.
 
 ## License
 
