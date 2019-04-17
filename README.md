@@ -15,7 +15,7 @@ const fileToArrayBuffer = require('file-to-arraybuffer')
 
 const input = document.querySelector('#file')
 input.addEventListener('change', function(event) {
-  const arrayBuffer =await fileToArrayBuffer(event.target.files[0])
+  const arrayBuffer = await fileToArrayBuffer(event.target.files[0])
 
   console.log(arrayBuffer)
 })

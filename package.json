@@ -1,6 +1,6 @@
 {
   "name": "@npmlib/file-to-arraybuffer",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Convert File to ArrayBuffer",
   "main": "file-to-arraybuffer.js",
   "scripts": {
