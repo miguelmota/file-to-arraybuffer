@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=yes">
+  <title>File to ArrayBuffer</title>
+  <style>
+    #output {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>File to ArrayBuffer</h1>
+  <input type="file" id="input" />
+  <textarea id="output" placeholder="hex output"></textarea>
+  <script src="../file-to-arraybuffer.js"></script>
+  <script>
+    const input = document.querySelector('#input')
+    const output = document.querySelector('#output')
+    input.addEventListener('change', function(event) {
+      event.preventDefault()
+      fileToArrayBuffer(event.target.files[0])
+      .then(function(ab) {
+        output.value = buf2hex(ab)
+        input.value = ''
+      })
+    })
+
+    function buf2hex(buffer) {
+      return Array.prototype.map.call(new Uint8Array(buffer), x => ('00'+x.toString(16)).slice(-2)).join('')
+    }
+  </script>
+</body>
+</html>
